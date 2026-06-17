@@ -1,16 +1,95 @@
-# React + Vite
+# React FAQ Accordion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive FAQ Accordion application built using React and CSS. The application displays a list of frequently asked questions and allows users to expand or collapse each item to view its answer.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Dynamic FAQ data rendering
+* Expand and collapse FAQ items
+* React Hooks (`useState`)
+* Reusable components
+* Responsive design
+* Smooth accordion animation
+* Clean and modern user interface
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* JavaScript (ES6+)
+* CSS3
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── App.jsx
+├── App.css
+└── main.jsx
+```
+
+## Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/react-faq-accordion.git
+```
+
+### Navigate to the Project Folder
+
+```bash
+cd react-faq-accordion
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run the Development Server
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```text
+http://localhost:5173
+```
+
+## How It Works
+
+1. FAQ data is stored in an array of objects.
+2. The `FaqAccordion` component maps through the data and renders individual `FaqItem` components.
+3. Each `FaqItem` manages its own open/close state using the `useState` hook.
+4. Clicking a question toggles the visibility of its answer.
+
+## Sample FAQ Data
+
+```javascript
+{
+  id: 1,
+  question: "What is React?",
+  answer: "React is a JavaScript library for building user interfaces."
+}
+```
+
+## Future Improvements
+
+* Open only one FAQ at a time
+* Search functionality
+* Dark mode support
+* Custom icons and animations
+* API-based FAQ loading
+
+## License
+
+This project is open-source and available under the MIT License.
+
+## Author
+
+**Muthukannan**
+
+GitHub: https://github.com/Muthukannan04
